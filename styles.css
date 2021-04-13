@@ -1,0 +1,26 @@
+body{ 
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+   
+}
+
+.mainbox{
+    box-sizing: border-box;
+    border: 5px solid teal;
+    border-radius: 0.5rem;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0.5rem;
+    width: 50%;
+    margin:0 auto;
+    height: 20%;
+    
+}
+
+#taskTodo{
+    font-family: 'PT Sans', sans-serif;
+    width: 50%;
+}
+
+.taskAdded{
+    border-bottom: 0.5px solid black;
+}
