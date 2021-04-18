@@ -17,11 +17,19 @@
     <div class="mainbox">
         <div class="taskInput">
             <input type="text" name="task" id="taskTodo" placeholder="add your task...">
-            <input type="image" >
+             <button id="addToList"><i class="fas fa-plus"></i></button>
         </div>
-        <div id="taskDescription">
+        <div class="taskDashboard">
+           <span class="dash" id="added">Task Added: 0</span>
+           <span class="dash" id="completed">Task Completed:0</span>
+        </div>
 
+        <div id="taskDescription">
         </div>
+ 
+        <div class="taskCompleted">
+            
+        </div>       
     </div>
 
     <script src="script.js"></script>
