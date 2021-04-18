@@ -58,7 +58,7 @@ function createTask(){
         item.addEventListener("click",event=>{
            replaceIcon(event);
            taskCompletedIncrement();
-           shiftToCompleted(task);
+         
         });
     })
 }
