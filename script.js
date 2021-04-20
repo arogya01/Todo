@@ -51,6 +51,11 @@ function taskContainer(){
     taskdescription.appendChild(container);
 }
 
+function cutlineThrough(){
+  let para=document.querySelector(".taskDetails");
+   para.style.textDecoration="line-through";
+}
+
 function createTask(){
     
     taskContainer();
@@ -58,7 +63,7 @@ function createTask(){
         item.addEventListener("click",event=>{
            replaceIcon(event);
            taskCompletedIncrement();
-         
+           cutlineThrough();
         });
     })
 }
