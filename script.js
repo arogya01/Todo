@@ -4,7 +4,7 @@ let taskCompleted=0;
 
 
 
-document.getElementById("addToList").addEventListener("click",()=>{
+document.getElementById("btn").addEventListener("click",()=>{
  createTask();
  incrementTask();
 
@@ -23,13 +23,13 @@ function replaceIcon(event){
 function taskCompletedIncrement(){
     let completed=document.getElementById("completed");
     taskCompleted+=1;
-    completed.textContent="task Completed:" + taskCompleted;
+    completed.textContent="Task Completed:" + taskCompleted;
 }
 
 function incrementTask(){
     let count=document.getElementById("added");
     taskCount+=1;
-    count.textContent="task Added:" + taskCount;
+    count.textContent="Task Added:" + taskCount;
 }
 
 function taskContainer(){
@@ -51,9 +51,10 @@ function taskContainer(){
     taskdescription.appendChild(container);
 }
 
-function cutlineThrough(){
-  let para=document.querySelector(".taskDetails");
-   para.style.textDecoration="line-through";
+function cutlineThrough(event){
+ let current=event.target;
+ let para=current.nextSibling;
+ para.style.textDecoration="line-through";
 }
 
 function createTask(){
@@ -63,7 +64,7 @@ function createTask(){
         item.addEventListener("click",event=>{
            replaceIcon(event);
            taskCompletedIncrement();
-           cutlineThrough();
+           cutlineThrough(event);
         });
     })
 }
