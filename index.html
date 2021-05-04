@@ -7,31 +7,38 @@
     <script src="https://kit.fontawesome.com/3e6fbf06fe.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO App</title>
-    <link rel="icon" type="image/jpg" href="images/favicon.png">
+    <link rel="icon" type="image/jpg" href="https://img.icons8.com/color/48/000000/writing-down.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="header">Todos✍🏻</h1>
+    <!-- header -->
+    <h1 id="header">Todos
+        <img src="https://img.icons8.com/color/48/000000/writing-down.png"/>
+    </h1>
+
+    <!-- wrapper in which the task will be added -->
     <div class="mainbox">
         <div class="taskInput">
-            <input type="text" name="task" id="taskTodo" placeholder="add your task...">
-             <button id="btn"><i class="fas fa-plus"></i></button>
+             <!-- taking input -->
+            <input type="text" name="task" id="taskTodo" placeholder="insert your juicy task...">
+             <button id="btn" ><i class="fas fa-plus"></i></button>
         </div>
+        <!-- displaying stats -->
         <div class="taskDashboard">
            <span class="dash" id="added">Task Added: 0</span>
            <span class="dash" id="completed">Task Completed:0</span>
         </div>
-
+        
+        <!-- output task dynamically -->
         <div id="taskDescription">
         </div>
  
-        <div class="taskCompleted">
-            
-        </div>       
+             
     </div>
 
     <script src="script.js"></script>
