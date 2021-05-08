@@ -1,58 +1,56 @@
-:root{
+:root {
     margin: 0;
     padding: 0;
-   
 }
 
-
-body{ 
+body {
     min-height: 100vh;
-    margin: 0;    
+    margin: 0;
     background-color: #41B3A3;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Itim', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
+
 /* header section */
-#header{ 
- display: flex;
- position: absolute;
- top: 20px;   
- justify-content: center; 
- align-content: center;
+
+#header {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 
 /* section where the task will be displayed */
-.mainbox{
+
+.mainbox {
     box-sizing: border-box;
     border: 1px solid transparent;
     background-color: white;
     border-radius: 0.5rem;
-    box-shadow:0 5px 36px black;
+    box-shadow: 0 5px 36px black;
     width: 40%;
-
-      
 }
 
+
 /* box where input will be given */
-.taskInput{ 
+
+.taskInput {
     display: flex;
     margin: 20px 10px 0 10px;
 }
 
-#taskTodo{
+#taskTodo {
     width: 92.5%;
     height: 30px;
-    font-family: 'IBM Plex Mono', monospace;
-   
-   
+    font-family: 'Itim', cursive;
 }
 
-#btn{
+#btn {
     margin-left: 2px;
     background-color: #41B3A1;
     color: white;
@@ -64,16 +62,20 @@ body{
     font-size: 18px;
 }
 
+
 /* displaying stats */
-.taskDashboard{ 
+
+.taskDashboard {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
     font-size: 1rem;
 }
 
+
 /* applying styles to dynamically created elements*/
-.taskAdded{
+
+.taskAdded {
     display: flex;
     border: 0.5px solid black;
     border-radius: 0.5rem;
@@ -84,30 +86,29 @@ body{
 }
 
 @keyframes slidein {
-    from{
-        margin-right: 100%;    }
-    to{
+    from {
+        margin-right: 100%;
+    }
+    to {
         margin-right: 10px;
     }
 }
 
-
-
-.taskDetails{ 
+.taskDetails {
     padding-left: 5px;
-
 }
-.icon{ 
+
+.icon {
     padding-left: 5px;
     cursor: pointer;
 }
 
-.deleteicon{
-   margin-left: auto;
-   padding-right: 5px;
-   cursor: pointer;
-}
-.taskDescription{ 
- border-bottom: solid 2px black;
+.deleteicon {
+    margin-left: auto;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
+.taskDescription {
+    border-bottom: solid 2px black;
+}
